@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NabiaNailsMaui.Views.LoginPage"
+             BackgroundColor="White"
+             Title="LoginPage">
+    <VerticalStackLayout Padding="30"
+                         Spacing="20"
+                         VerticalOptions="Center">
+        <Image Source="logonn.png"
+               HeightRequest="150"
+               HorizontalOptions="Center" />
+        <Button Text="Iniciar Sesión"
+                Clicked="OnLoginClicked"
+                BackgroundColor="#D7AEE8"
+                TextColor="White"
+                CornerRadius="10" />
+        <Button Text="Registrarse"
+                Clicked="OnRegisterClicked"
+                BackgroundColor="#D7AEE8"
+                TextColor="White"
+                CornerRadius="10" />
+    </VerticalStackLayout>
+</ContentPage>
+

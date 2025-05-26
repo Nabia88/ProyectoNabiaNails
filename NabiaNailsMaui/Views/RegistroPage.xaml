@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NabiaNailsMaui.Views.RegistroPage"
+             Title="Registro"
+             BackgroundColor="White">
+    <ScrollView>
+        <VerticalStackLayout Padding="30"
+                             Spacing="15">
+            <Image Source="logonn.png"
+                   HeightRequest="120"
+                   HorizontalOptions="Center" />
+            <Entry Placeholder="Nombre"
+                   x:Name="txtNombre" />
+            <Entry Placeholder="Apellidos"
+                   x:Name="txtApellidos" />
+            <Entry Placeholder="Teléfono"
+                   x:Name="txtTelefono"
+                   Keyboard="Telephone" />
+            <Entry Placeholder="Correo electrónico"
+                   x:Name="txtEmail"
+                   Keyboard="Email" />
+            <Entry Placeholder="Contraseña"
+                   x:Name="txtPassword"
+                   IsPassword="True" />
+            <Button Text="Registrarse"
+                    Clicked="OnRegisterClicked"
+                    BackgroundColor="#D7AEE8"
+                    TextColor="White"
+                    CornerRadius="10" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

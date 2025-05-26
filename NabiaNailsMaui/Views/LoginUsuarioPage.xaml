@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NabiaNailsMaui.Views.LoginUsuarioPage"
+             Title="Iniciar sesión"
+             BackgroundColor="White">
+    <VerticalStackLayout Padding="30"
+                         Spacing="15"
+                         VerticalOptions="Center">
+        <Image Source="logonn.png"
+               HeightRequest="120"
+               HorizontalOptions="Center" />
+        <Entry Placeholder="Correo electrónico"
+               x:Name="txtEmail"
+               Keyboard="Email" />
+        <Entry Placeholder="Contraseña"
+               x:Name="txtPassword"
+               IsPassword="True" />
+        <Button Text="Entrar"
+                Clicked="OnEntrarClicked"
+                BackgroundColor="#D7AEE8"
+                TextColor="White"
+                CornerRadius="10" />
+    </VerticalStackLayout>
+</ContentPage>
